@@ -45,7 +45,7 @@
 								<div class="item active">
 									<img src="images/pic01.jpg" alt="Chania"  width="460" height="345">
 									<div class="carousel-caption">
-										<h3>Chania</h3>
+										<h1>Chania</h1>
 										<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
 									</div>
 								</div>
@@ -209,12 +209,12 @@
 				</div>
 				<div id="contact" class="fake-section"></div>
 			<!-- Footer -->
-				<div id="footer-wrapper" class="wrapper">
+				<div id="footer-wrapper" class="wrapper ">
 					<div class="title">Contact Us 联系我们</div>
 					<div id="footer" class="container">
-						<header class="style1">
-							<h2>您需要什么样的解决方案呢?</h2>
-							<p>
+						<header class="style1" >
+							<h2 class="wow fadeInUp" data-wow-delay=".1s">您需要什么样的解决方案呢?</h2>
+							<p class="wow fadeIn" data-wow-delay=".2s">
 								描述您的想法，我们能够更加高效地为您提供服务.<br />
 								
 							</p>
@@ -228,15 +228,26 @@
 										<form method="post" action="#">
 											<div class="row 50%">
 												<div class="6u 12u(mobile)">
-													<input type="text" name="name" id="contact-name" placeholder="Name" />
+													<input type="text" name="name" id="contact-name" placeholder="姓名" />
 												</div>
 												<div class="6u 12u(mobile)">
 													<input type="text" name="email" id="contact-email" placeholder="Email" />
 												</div>
 											</div>
 											<div class="row 50%">
+												<div class="6u 12u(mobile)">
+													<select id="type" name="type" data-role="none" style="color: #555555;">
+														<option value="" disabled selected>选择您需要的项目类型</option>
+														<option value="website">网站建设</option>
+														<option value="app">App</option>
+														<option value="wechat">微信服务号</option>
+														<option value="wechat">其他</option>
+													</select>
+												</div>
+											</div>
+											<div class="row 50%">
 												<div class="12u">
-													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+													<textarea name="message" id="contact-message" placeholder="具体描述" rows="4"></textarea>
 												</div>
 											</div>
 											<div class="row">
@@ -258,7 +269,7 @@
 										<div class="row">
 											<div class="6u 12u(mobile)">
 												<section>
-													<h3 class="icon fa-home">Mailing Address</h3>
+													<h3 class="icon fa-home wow flipInX" data-wow-delay=".1s">Mailing Address</h3>
 													<p>
 														Untitled Corporation<br />
 														1234 Somewhere Rd #987<br />
@@ -268,7 +279,7 @@
 											</div>
 											<div class="6u 12u(mobile)">
 												<section>
-													<h3 class="icon fa-comment">Social</h3>
+													<h3 class="icon fa-comment wow flipInX" data-wow-delay=".2s">Social</h3>
 													<p>
 														<a href="#">@untitled-corp</a><br />
 														<a href="#">linkedin.com/untitled</a><br />
@@ -280,7 +291,7 @@
 										<div class="row">
 											<div class="6u 12u(mobile)">
 												<section>
-													<h3 class="icon fa-envelope">Email</h3>
+													<h3 class="icon fa-envelope wow flipInX" data-wow-delay=".3s">Email</h3>
 													<p>
 														<a href="#">business@zaitian.com</a>
 													</p>
@@ -288,7 +299,7 @@
 											</div>
 											<div class="6u 12u(mobile)">
 												<section>
-													<h3 class="icon fa-phone">Phone</h3>
+													<h3 class="icon fa-phone wow flipInX" data-wow-delay=".4s">Phone</h3>
 													<p>
 														15659834270
 													</p>
