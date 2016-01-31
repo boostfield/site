@@ -90,6 +90,12 @@
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
 					$('#titleBar, #navPanel, #page-wrapper')
 						.css('transition', 'none');
+		$("#myCarousel").swiperight(function() {
+			$(this).carousel('prev');
+		});
+		$("#myCarousel").swipeleft(function() {
+			$(this).carousel('next');
+		});
 
 	});
 	// Initialize WOW.js Scrolling Animations
