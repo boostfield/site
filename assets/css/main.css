@@ -1368,7 +1368,7 @@
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #6173F4 url("images/overlay.png");
 			color: #fff;
 		}
 
@@ -1377,7 +1377,7 @@
 			input[type="reset"].style1:hover,
 			button.style1:hover,
 			.button.style1:hover {
-				background-color: #f98780;
+				background-color: #7989F7;
 			}
 
 			input[type="button"].style1:active,
@@ -1385,7 +1385,7 @@
 			input[type="reset"].style1:active,
 			button.style1:active,
 			.button.style1:active {
-				background-color: #d96760;
+				background-color: #475BEB;
 			}
 
 		input[type="button"].style2,
@@ -1486,7 +1486,7 @@
 /* Feature List */
 
 	.feature-list h3 {
-		color: #e97770 !important;
+		color: #6173F4 !important;
 	}
 
 		.feature-list h3:before {
@@ -1529,8 +1529,16 @@
 	.carousel-inner > .item > a > img {
 
 		width: 100%;
-		height: 50vh;
-}
+		height: 100%;
+		min-width: 100%;
+		min-height: 100%;
+	}
+	.carousel-caption {
+
+		top: 25vh;
+
+	}
+
 /* Wrappers */
 
 	.wrapper {
@@ -1573,13 +1581,13 @@
 			}
 
 		.wrapper.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #6173F4 url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #e97770 url("images/overlay.png");
+				background: #6173F4 url("images/overlay.png");
 				color: #fff;
 			}
 
@@ -1747,7 +1755,7 @@
 	}
 
 		#highlights .highlight h3 {
-			color: #e97770;
+			color: #6173F4;
 		}
 
 /* Copyright */
