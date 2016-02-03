@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="zh-Hans">
 	<head>
 		<title>在田工作室</title>
 		<meta charset="utf-8" />
@@ -206,18 +206,19 @@
 
 								<!-- Contact Form -->
 									<section>
-										<form method="post" action="contact">
+
+										<form id="form" name="form"  >
 											<div class="row 50%">
 												<div class="6u 12u(mobile)">
-													<input type="text" name="name" id="contact-name" placeholder="姓名" />
+													<input type="text" name="name" id="name" placeholder="姓名" />
 												</div>
 												<div class="6u 12u(mobile)">
-													<input type="text" name="email" id="contact-email" placeholder="Email" />
+													<input type="text" name="email" id="email" placeholder="Email" />
 												</div>
 											</div>
 											<div class="row 50%">
 												<div class="6u 12u(mobile)">
-													<select id="type" name="type" data-role="none" style="color: #555555;">
+													<select id="type" name="type" data-role="none"  style="color: #555555;">
 														<option value="" disabled selected>选择您需要的项目类型</option>
 														<option value="website">网站建设</option>
 														<option value="app">App</option>
@@ -228,18 +229,19 @@
 											</div>
 											<div class="row 50%">
 												<div class="12u">
-													<textarea name="message" id="contact-message" placeholder="具体描述" rows="4"></textarea>
+													<textarea name="message" id="message" placeholder="具体描述" rows="4"></textarea>
 												</div>
 											</div>
 											<div class="row">
 												<div class="12u">
 													<ul class="actions">
-														<li><input type="submit" class="style1" value="发送" /></li>
+														<li><input id="submit" type="submit" class="style1" value="发送" /></li>
 														<li><input type="reset" class="style2" value="重置" /></li>
 													</ul>
 												</div>
 											</div>
 										</form>
+
 									</section>
 
 							</div>
@@ -304,13 +306,14 @@
 		<!-- Scripts -->
 
 		    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-
-
+			<script src="//cdn.bootcss.com/jquery-validate/1.14.0/jquery.validate.min.js"></script>
 		    <script src="//cdn.bootcss.com/jquery.dropotron/1.4.3/jquery.dropotron.min.js"></script>
+
 		    <script src="//cdn.bootcss.com/skel/3.0.0/skel.min.js"></script>
 		    <script src="//cdn.bootcss.com/skel/3.0.0/skel-viewport.min.js"></script>
 			<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 			<script src="//cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]>
 			<script src="assets/js/ie/respond.min.js"></script>

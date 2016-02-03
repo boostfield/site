@@ -34,7 +34,7 @@ app.post('/contact', function(req, res){
 
     var mailOptions = {
         from: "contact-reporter <auto-sender@boostfield.com>", // sender address
-        to: 'qky1412@boostfield.com,qingpengchen@boostfield.com,admin@boostfield.com,business@boostfield.com‍', // list of receivers
+        to: 'qky1412@boostfield.com,qingpengchen@boostfield.com,business@boostfield.com,admin@boostfield.com', // list of receivers
         subject: 'Contact Report', // Subject line
         text: constructMailBody(req) // plaintext body
     };
