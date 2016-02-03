@@ -1,0 +1,22 @@
+{
+  "name": "home-site",
+  "version": "1.0.0",
+  "description": "Escape Velocity by HTML5 UP\r html5up.net | @n33co\r Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qingpengchen2011/site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qingpengchen2011/site/issues"
+  },
+  "homepage": "https://github.com/qingpengchen2011/site#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
