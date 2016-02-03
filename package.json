@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/qingpengchen2011/site#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "nodemailer": "^2.1.0"
   }
 }
