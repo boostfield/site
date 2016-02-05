@@ -1073,7 +1073,7 @@
 	}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Microsoft YaHei', Merriweather, 'Helvetica Neue', Arial, sans-serif;
 		font-weight: 400;
 		color: #919499;
 	}
