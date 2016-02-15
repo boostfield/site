@@ -1298,6 +1298,7 @@
 
 	.image {
 		display: inline-block;
+		width: 80%;
 	}
 
 		.image img {
@@ -1329,6 +1330,7 @@
 			display: block;
 			width: 100%;
 			margin: 0 0 2em 0;
+			padding: 2em 2em 0em 2em;
 		}
 
 /* Button */
