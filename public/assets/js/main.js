@@ -101,16 +101,14 @@
 						email: {
 							required: true,
 							email: true
-						},
-						type: {
-							required: true
 						}
+
 					},
 					submitHandler: function (form) {
 						$.ajax({
 							type:"POST",
 							url:"contact",
-							data: "name="+$("#name").val()+"&email="+$("#email").val()+"&type="+$("#type").val()+"&message="+$("#message").val(),
+							data: "name="+$("#name").val()+"&email="+$("#email").val()+"&message="+$("#message").val(),
 							success:function(msg){
 								document.getElementById("name").value = "";
 								document.getElementById("email").value = "";
