@@ -180,8 +180,8 @@
 			marker.setLabel(label);
 			map.addOverlay(marker);
 			label.setStyle({
-				borderColor:"#808080",
-				color:"#333",
+				borderColor:"#000000",
+				color:"#000000",
 				cursor:"pointer",
 			});
 
