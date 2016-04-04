@@ -2397,7 +2397,7 @@
 		/* Feature List */
 
 			.feature-list section {
-				border-top: solid 1px #eee;
+
 			}
 
 			.feature-list > div > div:first-child > div:first-child > section {
@@ -2754,7 +2754,9 @@
 	font-size: 1.25em;
 }
 .carousel-caption {
-	bottom: 10%;
+	line-height: 1.5em;
+	bottom: 30%;
+	font-size: 2em
 }
 
 .feature-list {
@@ -2842,6 +2844,7 @@ select {
 	margin-left: 0;
 	padding-left: 0;
 	margin-top: 40px;
+	margin-bottom: 40px;
 	background-color: white;
 }
  .us h4 {
@@ -2861,6 +2864,10 @@ select {
 @media screen and (max-width: 736px) {
 	.us .col-sm-12 {
 		border-bottom: solid 1px #eee;
+	}
+	.us p {
+		text-align: left;
+		padding: 20px;
 	}
 }
 
