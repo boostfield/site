@@ -1906,22 +1906,22 @@
 
 			.feature-list h3 {
 				margin: 0 0 0.75em 0;
-				font-size: 1.15em;
+				font-size: 1em;
 				letter-spacing: 0.05em;
 				margin-top: -0.35em;
 			}
 
 				.feature-list h3:before {
-					width: 64px;
-					height: 64px;
-					line-height: 64px;
+					width: 56px;
+					height: 56px;
+					line-height: 56px;
 					margin-right: 0.75em;
-					font-size: 32px;
-					top: 0.2em;
+					font-size: 28px;
+					top: 0.1em;
 				}
 
 			.feature-list p {
-				margin: 0 0 0 5em;
+				margin: 0 0 0 4.5em;
 			}
 
 			.feature-list.small h3:before {
@@ -2080,6 +2080,7 @@
 							-ms-transition: all .25s ease-in-out;
 							transition: all .25s ease-in-out;
 							outline: 0;
+							text-shadow: 0 1px 2px rgba(0,0,0,.6);
 						}
 
 						#nav > ul > li:hover > a {
@@ -2812,10 +2813,7 @@ select {
 	opacity:1;
 }
 .baidu-map {
-
-	left:20%;
-	right:20%;
-	width: 60%;
+	width: 100%;
 	height: 450px;
 }
 
@@ -2835,3 +2833,7 @@ select {
 	white-space: -moz-pre-wrap;
 	word-wrap: break-word
 }
+ .zero-padding {
+	 padding-top: 0;
+	 padding-bottom: 0;
+ }
