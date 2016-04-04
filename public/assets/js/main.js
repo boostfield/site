@@ -46,7 +46,13 @@
 					skel.breakpoint('mobile').active
 				);
 			});
-
+		var elm = $('#nav');
+		var startPos = $(elm).offset().top;
+		$.event.add(window, "scroll", function() {
+			var p = $(window).scrollTop();
+			$(elm).css('position',((p) > startPos) ? 'fixed' : 'absolute');
+			$(elm).css('top',((p) > startPos) ? '0px' : '');
+		});
 		// Dropdowns.
 			$('#nav > ul').dropotron({
 				mode: 'fade',
@@ -69,6 +75,7 @@
 			// Navigation Panel.
 				$(
 					'<div id="navPanel">' +
+						'<h3>在田信息技术有限公司</h3>' +
 						'<nav>' +
 							$('#nav').navList() +
 						'</nav>' +

@@ -2049,8 +2049,9 @@
 
 				#nav > ul {
 					display: inline-block;
-					border-radius: 0.35em;
-					box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.75);
+					border-width: 1px;
+					border-radius: 0.25em;
+					box-shadow: inset 0px 0px 1px 1px rgba(200, 200, 200, 0.75);
 					padding: 0 1.25em 0 1.25em;
 					background-color: white;
 				}
@@ -2755,12 +2756,12 @@
 }
 .carousel-caption {
 	line-height: 1.5em;
-	bottom: 30%;
+	bottom: 35%;
 	font-size: 2em
 }
 
-.feature-list {
-
+.feature-list .row {
+	margin-left: 0;
 }
 
 .thumbnail {
@@ -2880,4 +2881,8 @@ select {
 }
 #footer.container {
 	padding-top: 80px;
+}
+
+#navPanel h3 {
+	padding: 20px;
 }
