@@ -2040,20 +2040,33 @@
 			#nav {
 				position: absolute;
 				display: block;
-				top: 2.5em;
+				top: 0em;
 				left: 0;
 				width: 100%;
-				text-align: center;
+				text-align: right;
 				z-index: 2;
 			}
+				.nav-header {
+					font-size: 1em;
+					position: absolute;
+					display: block;
+					padding-left: 100px;
+					line-height: 4.25em;
+					padding: 0 5em 0 5em;
+					background-image: url(../../images/logo.png);
+					background-size: 2em 2em;
+					background-repeat: no-repeat;
+					background-position: 2em;
+				}
 
 				#nav > ul {
 					display: inline-block;
 					border-width: 1px;
 					border-radius: 0.25em;
+					width: 100%;
 					box-shadow: inset 0px 0px 1px 1px rgba(200, 200, 200, 0.75);
 					padding: 0 1.25em 0 1.25em;
-					background-color: white;
+					background-color: rgba(255, 255, 255, 0.95);
 				}
 
 					#nav > ul > li {
@@ -2799,6 +2812,7 @@ select {
 	margin: 0;
 	vertical-align: middle;
 	text-align: left;
+	text-indent: 2em;
 	padding: 2em;
 	z-index: 10;
 	opacity: 0;
@@ -2849,8 +2863,9 @@ select {
 	background-color: white;
 }
  .us h4 {
-	 padding-top: 30px;
+	 padding-top: 20px;
 	 font-size: 22px;
+	 line-height: 0.5em;
 	 font-weight: 200;
  }
 .us p {
@@ -2867,16 +2882,20 @@ select {
 		border-bottom: solid 1px #eee;
 	}
 	.us p {
+		text-indent: 2em;
+		font-size: 1.15em;
+		line-height:1.5em;
 		text-align: left;
-		padding: 20px;
+		padding: 10px 20px 10px 20px;
 	}
 }
 
 #intro .style1 {
-	font-size: 1.75em;
-	color: black;
+	text-indent: 2em;
+	font-size: 1.5em;
+	color: gray;
 	line-height: 2em;
-	font-weight: 700;
+	font-weight: 200;
 	margin-bottom: 60px;
 }
 #footer.container {
@@ -2885,4 +2904,10 @@ select {
 
 #navPanel h3 {
 	padding: 20px;
+}
+
+.logo-title {
+	display: block;
+
+	margin-left: 0px;
 }
