@@ -2063,7 +2063,7 @@
 				#nav > ul {
 					display: inline-block;
 					border-width: 1px;
-					border-radius: 0.25em;
+					border-radius: 0;
 					width: 100%;
 					box-shadow: inset 0px 0px 1px 1px rgba(200, 200, 200, 0.75);
 					padding: 0 1.25em 0 1.25em;
@@ -2216,13 +2216,13 @@
 			}
 
 			#footer hr {
-				margin: 6em 0 6em 0;
+				margin: 3em 0 2em 0;
 			}
 
 		/* Copyright */
 
 			#copyright {
-				margin: 6em 0 0 0;
+				margin: 2em 0 0 0;
 			}
 
 				#copyright ul {
@@ -2316,7 +2316,7 @@
 		/* Copyright */
 
 			#copyright {
-				margin: 3em 0 0 0;
+				margin: 2em 0 0 0;
 			}
 
 	}
@@ -2928,4 +2928,7 @@ a {
 }
 #cnzz_stat_icon_1258406185 {
 	display: none;
+}
+#footer-wrapper.wrapper {
+	padding: 2em 0 0 2em;
 }
