@@ -1541,13 +1541,15 @@
 	background-size: cover;
 }
 .ad1 {
-	background: url(../../images/carousel1.jpg) no-repeat center center ;
+	background: url(../../images/carousel1.png) no-repeat center center ;
+
 }
 .ad2 {
 	background: url(../../images/carousel2.png) no-repeat center center ;
 }
 .ad3 {
 	background: url(../../images/carousel3.png) no-repeat center center ;
+
 }
 
 /* Wrappers */
@@ -2752,7 +2754,7 @@
 
 .banner {
 	color: white;
-	text-align: center;
+	text-align: left;
 }
 .banner p {
 
@@ -2770,8 +2772,9 @@
 }
 .carousel-caption {
 	line-height: 1.5em;
-	bottom: 35%;
-	font-size: 2em
+	bottom: 25%;
+	font-size: 2em;
+	text-align: left;
 }
 
 .feature-list .row {
@@ -2931,4 +2934,10 @@ a {
 }
 #footer-wrapper.wrapper {
 	padding: 2em 0 0 2em;
+}
+.carousel-control.right {
+	background-image: none;
+}
+.carousel-control.left {
+	background-image: none;
 }
