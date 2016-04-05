@@ -2821,6 +2821,7 @@ select {
 	height: 100%;
 	line-height: 1.5em;
 	background-color:rgba(0,0,0,0.8);
+	border-radius: 0.25em;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
@@ -2873,6 +2874,7 @@ select {
  }
 .us p {
 	text-align: left;
+	text-indent: 2em;
 	padding: 40px;
 }
 .us .col-md-4 {
@@ -2913,4 +2915,17 @@ select {
 	display: block;
 
 	margin-left: 0px;
+}
+.custom-footer {
+	text-align: center;
+	display: inline-block;
+}
+.custom-menu {
+	line-height: 4em;
+}
+a {
+	text-decoration: none;
+}
+#cnzz_stat_icon_1258406185 {
+	display: none;
 }
