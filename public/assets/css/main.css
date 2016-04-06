@@ -2840,7 +2840,6 @@ select {
 	padding: 0;
 	height: 450px;
 	border-radius: 0.25em;
-	box-shadow: inset 0px 0px 1px 0px #a0a1a7;
 }
 
 .iw_poi_title {
@@ -2853,9 +2852,9 @@ select {
 }
 
 .iw_poi_content {
-	font: 12px arial, sans-serif;
+	font-size: 12px;
 	overflow: visible;
-	padding-top: 0px;
+	padding-top: 5px;
 	white-space: -moz-pre-wrap;
 	word-wrap: break-word
 }
