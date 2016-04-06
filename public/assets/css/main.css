@@ -2789,7 +2789,9 @@
 	vertical-align: middle;
 	border: none;
 	text-align: center;
+
 }
+
 .thumbnail img {
 	display: block;
 	margin-top: 16%;
@@ -2808,6 +2810,7 @@
 	font-size: 1em;
 	color: white;
 }
+
 select {
 	font-style: italic;
 }
@@ -2824,12 +2827,15 @@ select {
 	width: 100%;
 	height: 100%;
 	line-height: 1.5em;
+	overflow:hidden;;/* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow:ellipsis;;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
 	background-color:rgba(0,0,0,0.8);
 	border-radius: 0.25em;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
+
 }
 .description:hover {
 	opacity:1;
@@ -2901,7 +2907,6 @@ select {
 }
 
 #intro .style1 {
-	text-indent: 2em;
 	font-size: 1.5em;
 	color: gray;
 	line-height: 2em;
@@ -2919,7 +2924,7 @@ select {
 .logo-title {
 	display: block;
 
-	margin-left: 0px;
+	margin-left: 0;
 }
 .custom-footer {
 	text-align: center;
@@ -2935,11 +2940,31 @@ a {
 	display: none;
 }
 #footer-wrapper.wrapper {
-	padding: 2em 0 0 0em;
+	padding: 2em 0 0 0;
 }
 .carousel-control.right {
 	background-image: none;
 }
 .carousel-control.left {
 	background-image: none;
+}
+
+@media screen and (min-width: 737px) {
+    #features .feature-list h3 {
+        padding: 1em 1em 1em 1em;
+        cursor: pointer; cursor: hand;
+        background-color: #f3f3f3;
+    }
+    .reveal {
+        padding: 0px 0 0 50px;
+        margin: 1em 0 2em 0;
+    }
+}
+#features .feature-list section {
+	padding-top: 0;
+	border-top: none;
+}
+
+.collapse, .well {
+    margin: 0;
 }
