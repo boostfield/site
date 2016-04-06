@@ -2056,7 +2056,7 @@
 					padding-left: 100px;
 					line-height: 4.25em;
 					padding: 0 5em 0 5em;
-					background-image: url(../../images/logo-small.jpg);
+					background-image: url(../../images/logo-small.png);
 					background-size: 2em 2em;
 					background-repeat: no-repeat;
 					background-position: 2em;
@@ -2777,7 +2777,9 @@
 	text-align: left;
 	text-shadow: none;
 }
-
+.carousel-caption p {
+    font-size: 0.75em;
+}
 .feature-list .row {
 	margin-left: 0;
 }
