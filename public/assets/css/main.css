@@ -1908,7 +1908,8 @@
 
 			.feature-list h3 {
 				margin: 0 0 0.75em 0;
-				font-size: 1em;
+				font-size: 1.25em;
+				font-weight: 400;
 				letter-spacing: 0.05em;
 				margin-top: -0.35em;
 			}
@@ -2790,13 +2791,14 @@
 	padding-left: 0;
 	vertical-align: middle;
 	border: none;
+	border-radius: 0;
 	text-align: center;
 
 }
 
 .thumbnail img {
 	display: block;
-	margin-top: 16%;
+	margin-top: 10%;
 	height: 50%;
 	width: 50%;
 }
@@ -2832,13 +2834,14 @@ select {
 	overflow:hidden;;/* 内容超出宽度时隐藏超出部分的内容 */
 	text-overflow:ellipsis;;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
 	background-color:rgba(0,0,0,0.8);
-	border-radius: 0.25em;
+	border-radius: 0;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 
 }
+
 .description:hover {
 	opacity:1;
 }
@@ -2868,6 +2871,7 @@ select {
 }
  .zero-padding {
 	 padding-top: 0;
+	 padding-left: 0;
 	 padding-bottom: 0;
  }
 
@@ -2893,6 +2897,9 @@ select {
 .us .col-md-4 {
 	padding-left: 0;
 	margin-left: 0;
+}
+#intro > div.row.us > div:nth-child(2) > h4, #intro > div.row.us > div:nth-child(2) > p {
+	border-left: solid 1px #eee;
 	border-right: solid 1px #eee;
 }
 @media screen and (max-width: 736px) {
@@ -2905,6 +2912,10 @@ select {
 		line-height:1.5em;
 		text-align: left;
 		padding: 10px 20px 10px 20px;
+	}
+	#intro > div.row.us > div:nth-child(2) > h4, #intro > div.row.us > div:nth-child(2) > p {
+		border-left: none;
+		border-right: none;
 	}
 }
 
@@ -2938,11 +2949,22 @@ select {
 a {
 	text-decoration: none;
 }
-#cnzz_stat_icon_1258406185 {
-	display: none;
+#footer a:hover,.custom-menu a:hover {
+	color: #6173F4 !important;
+}
+#footer-wrapper .feature-list h3 {
+
+}
+#footer-wrapper .feature-list h3:before{
+}
+#footer-wrapper .feature-list h3:before:hover {
+	color: #6173F4;
 }
 #footer-wrapper.wrapper {
 	padding: 2em 0 0 0;
+}
+#cnzz_stat_icon_1258406185 {
+	display: none;
 }
 .carousel-control.right {
 	background-image: none;
@@ -2953,7 +2975,7 @@ a {
 
 @media screen and (min-width: 737px) {
     #features .feature-list h3 {
-        padding: 1em 1em 1em 1em;
+        padding: 1em 1em 1em 2em;
         cursor: pointer; cursor: hand;
         background-color: #f3f3f3;
     }
@@ -2969,4 +2991,48 @@ a {
 
 .collapse, .well {
     margin: 0;
+}
+#footer section {
+	text-align: center;
+}
+#footer p{
+	margin-left: 0;
+}
+#footer .fa-stack {
+	margin-bottom: 1em;
+}
+#footer .fa-stack-1x {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+#footer .fa-stack-1x:hover{
+	color: #6173F4;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.fa-circle {
+	color: #3d4249;
+}
+.wrapper .title {
+	font-weight: 400;
+}
+.well {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#features > header > h2 {
+	font-weight: 400;
+}
+#intro .caption h3 {
+	font-size: 1.15em;
+	font-weight: 200;
+}
+#intro .caption h4 {
+	font-weight: 200;
 }
