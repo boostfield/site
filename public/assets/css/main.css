@@ -2427,6 +2427,7 @@
 				position: relative;
 				padding: 4px 0 0 48px;
 				line-height: 1.25em;
+				font-weight: 400;
 			}
 
 				.feature-list h3:before {
@@ -2917,6 +2918,9 @@ select {
 		border-left: none;
 		border-right: none;
 	}
+	#footer.container {
+		padding-top: 0 !important;
+	}
 }
 
 #intro .style1 {
@@ -2999,7 +3003,7 @@ a {
 	margin-left: 0;
 }
 #footer .fa-stack {
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 }
 #footer .fa-stack-1x {
 	-webkit-transition: all 0.5s ease;
