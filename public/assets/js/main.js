@@ -21,7 +21,6 @@
 		});
 
 	$(function() {
-
 		var	$window = $(window),
 			$body = $('body');
 
@@ -99,37 +98,9 @@
 						.css('transition', 'none');
 				// Initialize WOW.js Scrolling Animations
 				new WOW().init();
-				$("#form").validate({
-					ignore: ":hidden",
-					rules: {
-						name: {
-							required: true,
-						},
-						email: {
-							required: true,
-							email: true
-						}
-
-					},
-					submitHandler: function (form) {
-						$.ajax({
-							type:"POST",
-							url:"contact",
-							data: "name="+$("#name").val()+"&email="+$("#email").val()+"&message="+$("#message").val(),
-							success:function(msg){
-								document.getElementById("name").value = "";
-								document.getElementById("email").value = "";
-								document.getElementById("message").value = "";
-								alert("您的请求已经提交成功,我们会及时回复您");// 如果有必要，可以把msg变量的值显示到某个DIV元素中
-							},
-							error: function(jqXHR, textStatus, errorThrown){
-								alert('error ' + textStatus + " " + errorThrown);
-							}
-						});
-						return false; // required to block normal submit since you used ajax
-					}
-
-				});
+		$('.collapse').on('show.bs.collapse', function (e) {
+			$('.collapse').not(e.target).removeClass('in');
+		});
 
 	});
 
