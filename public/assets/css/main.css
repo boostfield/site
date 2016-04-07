@@ -2773,14 +2773,14 @@
 	font-size: 1.25em;
 }
 .carousel-caption {
-	line-height: 1.5em;
+	line-height: 1.25em;
 	bottom: 25%;
 	font-size: 2em;
 	text-align: left;
 	text-shadow: none;
 }
 .carousel-caption p {
-    font-size: 0.75em;
+    font-size: 0.65em;
 }
 .feature-list .row {
 	margin-left: 0;
@@ -2921,6 +2921,11 @@ select {
 	#footer.container {
 		padding-top: 0 !important;
 	}
+	#features section {
+		margin: 0;
+		padding: 0 0 1em 0 !important;
+	}
+
 }
 
 #intro .style1 {
@@ -2950,9 +2955,7 @@ select {
 .custom-menu {
 	line-height: 4em;
 }
-a {
-	text-decoration: none;
-}
+
 #footer a:hover,.custom-menu a:hover {
 	color: #6173F4 !important;
 }
@@ -3040,3 +3043,7 @@ a {
 #intro .caption h4 {
 	font-weight: 200;
 }
+a, a:visited, a:link{
+	text-decoration: none;
+}
+
