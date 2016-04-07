@@ -141,7 +141,7 @@
 
 		.container.\31 25\25 {
 			width: 100%;
-			max-width: 125%;
+			max-width: 100%;
 			min-width: 100%;
 		}
 
@@ -1807,7 +1807,7 @@
 			}
 
 			body {
-				min-width: 1200px;
+				min-width: 737px;
 			}
 
 			hr {
@@ -2256,7 +2256,7 @@
 		/* Basic */
 
 			body {
-				min-width: 1000px;
+				min-width: 737px;
 				font-size: 12pt;
 				line-height: 1.5em;
 				letter-spacing: 0.015em;
@@ -2269,7 +2269,7 @@
 			}
 
 			body {
-				min-width: 960px;
+				min-width: 737px;
 			}
 
 		/* Wrappers */
