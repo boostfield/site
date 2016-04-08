@@ -3086,6 +3086,7 @@ select {
 
 .collapse, .well {
     margin: 0;
+	color: #484d55;
 }
 #footer section {
 	text-align: center;
