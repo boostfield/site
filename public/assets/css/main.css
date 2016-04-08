@@ -2903,6 +2903,42 @@ select {
 	border-left: solid 1px #eee;
 	border-right: solid 1px #eee;
 }
+.icon-service {
+	background-size: 60px 60px;
+	background-image: url("../../images/service-analysis.png");
+	background-repeat: no-repeat;
+	background-position: 1.5em;
+}
+.icon-design {
+	background-size: 60px 60px;
+	background-image: url("../../images/service-design.png");
+	background-repeat: no-repeat;
+	background-position: 1.5em;
+}
+.icon-app {
+	background-size: 60px 60px;
+	background-image: url("../../images/service-app.png");
+	background-repeat: no-repeat;
+	background-position: 1.5em;
+}
+.icon-web {
+	background-size: 60px 60px;
+	background-image: url("../../images/service-web.png");
+	background-repeat: no-repeat;
+	background-position: 1.5em;
+}
+.icon-solution {
+	background-size: 60px 60px;
+	background-image: url("../../images/service-solution.png");
+	background-repeat: no-repeat;
+	background-position: 1.5em;
+}
+.icon-consult {
+	background-size: 60px 60px;
+	background-image: url("../../images/service-consult.png");
+	background-repeat: no-repeat;
+	background-position: 1.5em;
+}
 @media screen and (max-width: 736px) {
 	.us .col-sm-12 {
 		border-bottom: solid 1px #eee;
@@ -2925,9 +2961,57 @@ select {
 		margin: 0;
 		padding: 0 0 1em 0 !important;
 	}
+	.feature-list h3 {
+		position: relative;
+		padding: 1em 0 1em 4.5em;
+		line-height: 2em;
+		font-weight: 400;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+	#features > section > div:nth-child(5) > div:nth-child(1) > section > a > h3 {
+		line-height: 1.25em;
+	}
+	.icon-service {
+		background-size: 40px 40px;
 
+		background-position: 1em;
+	}
+	.icon-design {
+		background-size: 40px 40px;
+
+		background-position: 1em;
+	}
+	.icon-app {
+		background-size: 40px 40px;
+
+		background-position: 1em;
+	}
+	.icon-web {
+		background-size: 40px 40px;
+
+		background-position: 1em;
+	}
+	.icon-solution {
+		background-size: 40px 40px;
+
+		background-position: 1em;
+	}
+	.icon-consult {
+		background-size: 40px 40px;
+
+		background-position: 1em;
+	}
 }
-
+.feature-list h3:hover {
+	color: #6173F4;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
 #intro .style1 {
 	font-size: 1.5em;
 	color: gray;
@@ -2982,9 +3066,13 @@ select {
 
 @media screen and (min-width: 737px) {
     #features .feature-list h3 {
-        padding: 1em 1em 1em 2em;
+        padding: 1.5em 1em 1.5em 5em;
         cursor: pointer; cursor: hand;
         background-color: #f3f3f3;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
     }
     .reveal {
         padding: 0px 0 0 50px;
@@ -3046,4 +3134,7 @@ select {
 a, a:visited, a:link{
 	text-decoration: none;
 }
+
+
+
 
