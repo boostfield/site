@@ -3024,7 +3024,13 @@ select {
 }
 
 #navPanel h3 {
-	padding: 20px;
+	font-size: 1.25em;
+	color: #6173F4;
+	background-image: url("../../images/logo-small.png");
+	background-size: 2em 2em;
+	background-repeat: no-repeat;
+	background-position: 1em 0.65em;
+	padding: 1em 0 1em 3.25em;
 }
 
 .logo-title {
