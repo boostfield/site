@@ -1540,6 +1540,16 @@
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+.carousel .carousel-inner .banner-title {
+	text-align: center;
+}
+.carousel .carousel-inner .banner-title img {
+	width:250px;
+	height: auto;
+	margin-top: 250px;
+}
+
 .ad1 {
 	background: url(../../images/carousel1.jpg) no-repeat center center ;
 
@@ -2752,6 +2762,11 @@
 				-o-background-size: cover;
 				background-size: cover;
 		}
+			.carousel .carousel-inner .banner-title img {
+				width: 60%;
+				margin-top: 10%;
+				height: auto;
+			}
 	}
 
 .banner {
@@ -3140,13 +3155,4 @@ select {
 }
 a, a:visited, a:link{
 	text-decoration: none;
-}
-
-.carousel .carousel-inner .banner-title {
-	text-align: center;
-}
-.carousel .carousel-inner .banner-title img {
-	width:250px;
-	height: auto;
-	margin-top:10%;
 }
