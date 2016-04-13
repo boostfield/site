@@ -1541,7 +1541,7 @@
 	background-size: cover;
 }
 .ad1 {
-	background: url(../../images/carousel1.png) no-repeat center center ;
+	background: url(../../images/carousel1.jpg) no-repeat center center ;
 
 }
 .ad2 {
@@ -3140,4 +3140,13 @@ select {
 }
 a, a:visited, a:link{
 	text-decoration: none;
+}
+
+.carousel .carousel-inner .banner-title {
+	text-align: center;
+}
+.carousel .carousel-inner .banner-title img {
+	width:250px;
+	height: auto;
+	margin-top:10%;
 }
