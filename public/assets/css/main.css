@@ -2809,7 +2809,7 @@
 	border: none;
 	border-radius: 0;
 	text-align: center;
-
+	overflow:hidden;
 }
 
 .thumbnail img {
@@ -2817,6 +2817,8 @@
 	margin-top: 10%;
 	height: 50%;
 	width: 50%;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 .thumbnail h3 {
 	margin-bottom: 0.5rem;
@@ -2828,7 +2830,7 @@
 }
 .thumbnail p {
 	font-size: 1em;
-	color: white;
+	font-weight: 200;
 }
 
 select {
@@ -2849,17 +2851,36 @@ select {
 	line-height: 1.5em;
 	overflow:hidden;;/* 内容超出宽度时隐藏超出部分的内容 */
 	text-overflow:ellipsis;;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
-	background-color:rgba(0,0,0,0.8);
+	background-color: white;
 	border-radius: 0;
+	-webkit-transform: translate(0,20px);
+	transform: translate(0,20px);
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-
 }
 
 .description:hover {
 	opacity:1;
+	-webkit-transform: translate(0,0);
+	transform: translate(0,0);
+}
+.thumbnail:hover img{
+
+	opacity: 0;
+}
+.thumbnail .caption {
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.thumbnail:hover .caption{
+	-webkit-transform: translate(0,200px);
+	transform: translate(0,200px);
+	opacity: 0;
 }
 .baidu-map {
 	width: 100%;
@@ -3155,4 +3176,7 @@ select {
 }
 a, a:visited, a:link{
 	text-decoration: none;
+}
+#myCarousel {
+	cursor: pointer; cursor: hand;
 }
