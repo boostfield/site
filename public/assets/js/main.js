@@ -109,6 +109,15 @@
 			return false;
 		});
 
+		$('.wechat').popover({
+			container: '#contact',
+			html: true,
+			trigger: 'hover',
+			placement: 'auto',
+			delay: { "show": 500, "hide": 100 },
+			content: function(){return '<img width="150" height="150" src="'+$(this).data('img') + '" />';}
+		});
+
 	});
 })(jQuery);
 

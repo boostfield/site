@@ -3180,3 +3180,7 @@ a, a:visited, a:link{
 #myCarousel {
 	cursor: pointer; cursor: hand;
 }
+.popover .fade .in{
+	display: inline !important;
+	overflow: hidden;
+}
