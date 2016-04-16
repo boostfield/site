@@ -3184,3 +3184,43 @@ a, a:visited, a:link{
 	display: inline !important;
 	overflow: hidden;
 }
+.process {
+	color: white;
+	text-align: center;
+	position: relative;
+}
+.process .fa-circle {
+	color: white;
+}
+.process li:nth-child(odd) {
+	padding-right: 10em;
+}
+.process li:nth-child(even) {
+	padding-left: 10em;
+}
+.process:after {
+	content:"";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	border-left: 2px solid rgba(255,255,255,0.25);
+}
+@media screen and (max-width: 736px) {
+	.process:after {
+		z-index: -1;
+	}
+	.process li:nth-child(odd) {
+		padding: 0;
+
+	}
+	.process li:nth-child(even) {
+		padding: 0;
+
+	}
+	.process .row > * {
+		float: none;
+		clear: both;
+	}
+}
