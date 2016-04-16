@@ -3211,6 +3211,9 @@ a, a:visited, a:link{
 	.process:after {
 		z-index: -1;
 	}
+	.process li {
+		border-bottom: 1px solid rgba(255,255,255,0.25);
+	}
 	.process li:nth-child(odd) {
 		padding: 0;
 
