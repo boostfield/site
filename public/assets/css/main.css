@@ -3198,20 +3198,16 @@ a, a:visited, a:link{
 .process li:nth-child(even) {
 	padding-left: 10em;
 }
-.process:after {
-	content:"";
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	bottom: 0;
-	left: 50%;
-	border-left: 2px solid rgba(255,255,255,0.25);
+body > div.wrapper.style1 > div.process > div > div.col-lg-8.col-md-8.text-center {
+	text-align: center;
 }
+
 @media screen and (max-width: 736px) {
-	.process:after {
-		z-index: -1;
+	.process .row > * {
+		float: none;
+		clear: both;
 	}
-	.process li {
+	.process .col-md-3 {
 		border-bottom: 1px solid rgba(255,255,255,0.25);
 	}
 	.process li:nth-child(odd) {
@@ -3222,8 +3218,7 @@ a, a:visited, a:link{
 		padding: 0;
 
 	}
-	.process .row > * {
-		float: none;
-		clear: both;
-	}
+}
+#intro > p:nth-child(2) {
+	margin-bottom: 60px;
 }
