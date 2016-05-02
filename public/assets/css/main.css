@@ -3227,3 +3227,13 @@ body > div.wrapper.style1 > div.process > div > div.col-lg-8.col-md-8.text-cente
 #intro > p:nth-child(2) {
 	margin-bottom: 60px;
 }
+.partner img {
+	margin: 2em;
+
+}
+.vcenter {
+
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
