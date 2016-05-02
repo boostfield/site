@@ -3040,6 +3040,10 @@ select {
 
 		background-position: 1em;
 	}
+	.description {
+		padding: 10px;
+		line-height: 1.45em;
+	}
 }
 .feature-list h3:hover {
 	color: #6173F4;
@@ -3198,12 +3202,7 @@ a, a:visited, a:link{
 .process li:nth-child(even) {
 	padding-left: 10em;
 }
-.process .row .col-lg-10 .col-md-3:not(:last-child){
-    background-image: url(../../images/logo-small.png);
-    background-position: center right;
-    background-repeat: no-repeat;
-    color: white;
-}
+
 body > div.wrapper.style1 > div.process > div > div.col-lg-8.col-md-8.text-center {
 	text-align: center;
 }
