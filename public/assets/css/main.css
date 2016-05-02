@@ -2941,7 +2941,7 @@ select {
 }
 .icon-service {
 	background-size: 60px 60px;
-	background-image: url("../../images/service-analysis.png");
+	background-image: url("../../images/service-wechat.png");
 	background-repeat: no-repeat;
 	background-position: 1.5em;
 }
@@ -3039,6 +3039,10 @@ select {
 		background-size: 40px 40px;
 
 		background-position: 1em;
+	}
+	.description {
+		padding: 10px;
+		line-height: 1.45em;
 	}
 }
 .feature-list h3:hover {
@@ -3198,6 +3202,7 @@ a, a:visited, a:link{
 .process li:nth-child(even) {
 	padding-left: 10em;
 }
+
 body > div.wrapper.style1 > div.process > div > div.col-lg-8.col-md-8.text-center {
 	text-align: center;
 }
@@ -3221,4 +3226,14 @@ body > div.wrapper.style1 > div.process > div > div.col-lg-8.col-md-8.text-cente
 }
 #intro > p:nth-child(2) {
 	margin-bottom: 60px;
+}
+.partner img {
+	margin: 2em;
+
+}
+.vcenter {
+
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
 }
