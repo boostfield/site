@@ -16,6 +16,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+	    color: #5e5e5e;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -2812,6 +2813,10 @@
 	overflow:hidden;
 }
 
+.addPadding{
+	padding: 1em;
+}
+
 .thumbnail img {
 	display: block;
 	margin-top: 10%;
@@ -2861,6 +2866,9 @@ select {
 	transition: all 0.5s ease;
 }
 
+
+
+
 .description:hover {
 	opacity:1;
 	-webkit-transform: translate(0,0);
@@ -2870,6 +2878,13 @@ select {
 
 	opacity: 0;
 }
+
+/*小屏幕 不隐藏*/
+.thumbnail.show:hover img{
+	opacity: 1;
+	color:#5e5e5e ;
+}
+
 .thumbnail .caption {
 
 	-webkit-transition: all 0.5s ease;
@@ -2881,6 +2896,13 @@ select {
 	-webkit-transform: translate(0,200px);
 	transform: translate(0,200px);
 	opacity: 0;
+}
+
+/*小屏幕 不隐藏*/
+.thumbnail.show:hover .caption{
+	opacity: 1;
+	-webkit-transform: translate(0,0);
+	transform: translate(0,0);
 }
 .baidu-map {
 	width: 100%;
@@ -3054,7 +3076,7 @@ select {
 }
 #intro .style1 {
 	font-size: 1.5em;
-	color: gray;
+	/*color: gray;*/
 	line-height: 2em;
 	font-weight: 200;
 	margin-bottom: 60px;
