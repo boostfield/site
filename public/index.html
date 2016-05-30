@@ -51,7 +51,8 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner ">
-                <div class="item active ad1 banner">
+                <div class="item active ad1 banner"
+                     onclick="window.location.href='http://blog.boostfield.com/tag/an-li/';return false">
                     <div class="banner-title">
                         <img src="images/carousel1-title.png">
                     </div>
@@ -481,7 +482,7 @@
                 <div class="thumbnail addPadding show wow fadeIn" data-wow-delay=".2s">
                     <img class="img-circle img-responsive" src="images/avatar-yongxuan.jpg" alt="...">
 
-                    <div class="caption">
+                    <div class="caption" >
                         <h3>赖永炫</h3>
                         <h4>技术顾问</h4>
                     </div>
@@ -491,8 +492,12 @@
                     </div>
                 </div>
             </div>
+
+            <a  class="pull-right" href="#morelink" onclick="showmorepeople()" id="morelink"> 更多团队成员介绍 </a>
+
+            <div class="hidden" id="morepeople">
             <div class="col-sm-12 col-md-4">
-                <div class="thumbnail addPadding show wow fadeIn" data-wow-delay=".2s">
+                <div class="thumbnail addPadding show" data-wow-delay=".2s">
                     <img class="img-circle img-responsive" src="images/avatar-zengyi.jpg" alt="...">
 
                     <div class="caption">
@@ -622,6 +627,11 @@
                     </div>
                 </div>
             </div>
+                <a  href="#morelink" class="pull-right" onclick="showmorepeople()">收起更多成员介绍</a>
+
+            </div>
+
+
         </div>
 
     </div>
@@ -632,47 +642,47 @@
         <div class="row text-center">
                 <div class="col-lg-1 col-md-1"></div>
                 <div class="col-lg-10 col-md-10 text-center">
-                        <div class="col-md-3 wow slideInUp" data-wow-delay=".1s" data-wow-duration="1.5s">
+                        <div class="col-md-3 col-xs-6 wow slideInUp" data-wow-delay=".1s" data-wow-duration="1.5s">
                             <div class="fa-stack fa-3x">
                                 <i class="fa fa-list-ol fa-stack-1x"></i>
                             </div>
-                                <p >需求梳理</p>
+                                <p>1.需求梳理</p>
                         </div>
-                        <div class="col-md-3 wow slideInUp" data-wow-delay=".15s" data-wow-duration="1.5s">
+                        <div class="col-md-3 col-xs-6 wow slideInUp" data-wow-delay=".15s" data-wow-duration="1.5s">
                             <div class="fa-stack fa-3x">
                                 <i class="fa fa-object-group fa-stack-1x"></i>
                             </div>
-                            <p>原型设计</p>
+                            <p>2.原型设计</p>
                         </div>
-                        <div class="col-md-3 wow slideInUp" data-wow-delay=".2s" data-wow-duration="1.5s">
+                        <div class="col-md-3 col-xs-6 wow slideInUp" data-wow-delay=".2s" data-wow-duration="1.5s">
                             <div class="fa-stack fa-3x">
                                 <i class="fa fa-image fa-stack-1x"></i>
                             </div>
-                            <p>UI设计</p>
+                            <p>3.UI设计</p>
                         </div>
-                        <div class="col-md-3 wow slideInUp" data-wow-delay=".25s" data-wow-duration="1.5s">
+                        <div class="col-md-3 col-xs-6 wow slideInUp" data-wow-delay=".25s" data-wow-duration="1.5s">
                             <div class="fa-stack fa-3x">
                                 <i class="fa fa-code fa-stack-1x"></i>
                             </div>
-                            <p>产品开发&测试</p>
+                            <p>4.产品开发&测试</p>
                         </div>
-                        <div class="col-md-3 wow slideInUp" data-wow-delay=".3s" data-wow-duration="1.5s">
+                        <div class="col-md-3 col-xs-6 wow slideInUp" data-wow-delay=".3s" data-wow-duration="1.5s">
                             <div class="fa-stack fa-3x ">
                                 <i class="fa fa-bug fa-stack-1x"></i>
                             </div>
-                            <p>测试验收</p>
+                            <p>5.测试验收</p>
                         </div>
-                        <div class="col-md-3 wow slideInUp" data-wow-delay=".35s" data-wow-duration="1.5s">
+                        <div class="col-md-3 col-xs-6 wow slideInUp" data-wow-delay=".35s" data-wow-duration="1.5s">
                             <div class="fa-stack fa-3x ">
                                 <i class="fa fa-rocket fa-stack-1x"></i>
                             </div>
-                            <p>部署上线</p>
+                            <p>6.部署上线</p>
                         </div>
-                        <div class="col-md-3 wow slideInUp" data-wow-delay=".4s" data-wow-duration="1.5s">
+                        <div class="col-md-3 col-xs-6 wow slideInUp" data-wow-delay=".4s" data-wow-duration="1.5s">
                             <div class="fa-stack fa-3x ">
                                 <i class="fa fa-cogs fa-stack-1x"></i>
                             </div>
-                            <p >质保服务</p>
+                            <p >7.质保服务</p>
                         </div>
                 </div>
             <div class="col-lg-1 col-md-1"></div>
@@ -794,7 +804,22 @@
 </div>
 </div>
 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cspan id='cnzz_stat_icon_1258406185'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1258406185%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+document.write(unescape("%3Cspan id='cnzz_stat_icon_1258406185'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1258406185%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+
+function showmorepeople(){
+    $("#morepeople").toggleClass("hidden");
+    if($("#morelink").text().trim()=="更多团队成员介绍"){
+        $("#morelink").text("收起更多团队介绍");
+    }else{
+        $("#morelink").text("更多团队成员介绍");
+    }
+
+
+}
+</script>
+
+
+
 </body>
 <!-- Scripts -->
 
@@ -809,5 +834,6 @@ document.write(unescape("%3Cspan id='cnzz_stat_icon_1258406185'%3E%3C/span%3E%3C
 <script src="assets/js/ie/respond.min.js"></script>
 <![endif]-->
 <script src="assets/js/main.js"></script>
+
 </html> 
 
