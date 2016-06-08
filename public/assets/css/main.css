@@ -2147,11 +2147,14 @@
 			   bottom:20px;
 			   right: 10%;
 			   cursor: pointer;
+			   border-radius: 8px;
 			   z-index: 20000;
 		   }
 			#goToTop a {
 				background: none repeat scroll 0 0 #A280F1;
 				border: 1px solid #CCCCCC;
+				border-radius: 8px;
+				-webkit-border-radius: 8px;
 				color: #fdfeff;
 				font-size: 18px;
 				padding: 5px;
