@@ -55,12 +55,33 @@
 
         //gototop
 
-        show "gototop" directly,
+        //show "gototop" directly,
+
+        // $(document).ready(function () {
+        //     $('#goToTop a').click(function () {
+        //         $('html,body').animate({scrollTop:0},'show');
+        //     });
+        // });
+
+        //show "gototop" indirectly
         $(document).ready(function () {
-            $('#goToTop a').click(function () {
-                $('html,body').animate({scrollTop:0},'show');
+            $("#goToTop").hide()
+            $(function () {
+                $(window).scroll(function () {
+                    if($(this).scrollTop()>1){
+                        $("#goToTop").fadeIn();
+                    }else {
+                        $("#goToTop").fadeOut();
+                    }
+                });
+            });
+            $("#goToTop a").click(function () {
+                $('html,body').animate({scrollTop:0},800);
+                return false;
             });
         });
+
+
 
         // Dropdowns.
         $('#nav > ul').dropotron({
@@ -81,7 +102,7 @@
         )
             .appendTo($body);
 
-        Navigation Panel.
+        //Navigation Panel.
         $(
             '<div id="navPanel">' +
             '<h3>在田信息技术有限公司</h3>' +
