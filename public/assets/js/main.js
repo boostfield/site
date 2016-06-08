@@ -52,6 +52,16 @@
             $(elm).css('position', ((p) > startPos) ? 'fixed' : 'absolute');
             $(elm).css('top', ((p) > startPos) ? '0px' : '');
         });
+
+        //gototop
+
+        show "gototop" directly,
+        $(document).ready(function () {
+            $('#goToTop a').click(function () {
+                $('html,body').animate({scrollTop:0},'show');
+            });
+        });
+
         // Dropdowns.
         $('#nav > ul').dropotron({
             mode: 'fade',
@@ -71,7 +81,7 @@
         )
             .appendTo($body);
 
-        // Navigation Panel.
+        Navigation Panel.
         $(
             '<div id="navPanel">' +
             '<h3>在田信息技术有限公司</h3>' +

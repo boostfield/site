@@ -84,6 +84,7 @@
 
 	.container {
 		width: 960px;
+		position:relative;
 	}
 
 	@media screen and (min-width: 737px) {
@@ -429,7 +430,7 @@
 		}
 
 		.row {
-			margin: -50px 0 -1px -50px;
+			margin: -36px 0 -1px -50px;
 		}
 
 		.row.uniform > * {
@@ -1657,7 +1658,7 @@
 		}
 
 	#footer-wrapper {
-		background: #282b34 url("images/overlay.png");
+		background: #383B45 url("images/overlay.png");
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 	}
@@ -1723,7 +1724,7 @@
 			}
 
 		#footer-wrapper .title {
-			background: #282b34 url("images/overlay.png");
+			background: #383B45 url("images/overlay.png");
 			color: #eee;
 		}
 
@@ -2010,6 +2011,8 @@
 			#intro-wrapper{
 				padding-bottom: 8em;
 			}
+			
+
 
 		/* Header */
 
@@ -2062,12 +2065,13 @@
 				z-index: 3;
 			}
 				.nav-header {
+					height:5.06em;
 					font-size: 1em;
 					color: black;
 					position: absolute;
 					display: block;
 					padding-left: 100px;
-					line-height: 4.25em;
+					line-height: 5.06em;
 					padding: 0 5em 0 5em;
 					background-image: url(../../images/logo-small.png);
 					background-size: 2em 2em;
@@ -2100,7 +2104,7 @@
 							color: black;
 							text-transform: uppercase;
 							text-decoration: none;
-							font-size: 0.85em;
+							font-size: 1em;
 							letter-spacing: 0.25em;
 							height: 5em;
 							line-height: 5em;
@@ -2113,13 +2117,52 @@
 
 						}
 
-						#nav > ul > li:hover > a {
-							color: #6173F4;
+						#nav > ul > li:hover {
+
+							border-bottom:3px solid #6173F4;
+							-webkit-transition:all .5s ease-in-out;
+							-ms-transition: all .5s ease-in-out;
+							transition: all .5s ease-in-out;
 						}
+		                #nav > ul > li:hover a{
+							color: #6173F4;
+							font-weight: bold;
+						}
+
 
 						#nav > ul > li.active > a, #nav > ul > li.active > span {
 							color: #6173F4;
 						}
+
+			/* go to top*/
+			.homepage{
+				width: 100%;
+				margin:0 auto;
+				height: auto;
+				min-height: 100%;
+				position: relative;
+			}
+		   #goToTop{
+			   position: fixed;
+			   bottom:20px;
+			   right: 10%;
+			   cursor: pointer;
+			   z-index: 20000;
+		   }
+			#goToTop a {
+				background: none repeat scroll 0 0 #A280F1;
+				border: 1px solid #CCCCCC;
+				color: #fdfeff;
+				font-size: 18px;
+				padding: 5px;
+
+				text-decoration: none;
+				text-shadow: 0 1px 0 #999;
+				-webkit-text-shadow: 0 1px 0 #999;
+				    -ms-text-shadow: 0 1px 0 #999;
+						text-shadow: 0 1px 0 #999;
+
+			}
 
 			.dropotron {
 				background: #222835 url("images/overlay.png");
@@ -2163,6 +2206,8 @@
 				.dropotron li:hover > a, .dropotron li:hover > span {
 					color: #fff;
 				}
+
+
 
 		/* Intro */
 
@@ -3181,7 +3226,7 @@ select {
 	transition: all 0.5s ease;
 }
 .fa-circle {
-	color: #3d4249;
+	color: #52545F;
 }
 .wrapper .title {
 	font-weight: 400;
