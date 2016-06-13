@@ -3,7 +3,11 @@
  html5up.net | @n33co
  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
  */
-
+//swiper
+// var mySwiper = new Swiper ('.swiper-container',{
+//     prevButton:'left carousel-control',
+//     nextButton:'right carousel-control',
+// });
 (function ($) {
 
     skel
