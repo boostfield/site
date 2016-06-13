@@ -4,10 +4,17 @@
  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
  */
 //swiper
+<<<<<<< HEAD
 // var mySwiper = new Swiper ('.swiper-container',{
 //     prevButton:'left carousel-control',
 //     nextButton:'right carousel-control',
 // });
+=======
+var mySwiper = new Swiper ('.swiper-container',{
+    prevButton:'left carousel-control',
+    nextButton:'right carousel-control',
+});
+>>>>>>> origin/iss2
 (function ($) {
 
     skel
