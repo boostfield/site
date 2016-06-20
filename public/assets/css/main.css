@@ -35,8 +35,7 @@
 	z-index: 20000;
 }
 #goToTop a {
-	background: none repeat scroll 0 0 #A280F1;
-	border: 1px solid #CCCCCC;
+	background: none repeat scroll 0 0 #6777F3;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	color: #fdfeff;
@@ -1607,6 +1606,7 @@
 /* Wrappers */
 
 	.wrapper {
+
 		position: relative;
 	}
 
@@ -2160,14 +2160,21 @@
 
 						#nav > ul > li:hover  {
 
-							border-bottom:3px solid #6173F4;
-							-webkit-transition:all .5s ease-in-out;
-							-ms-transition: all .5s ease-in-out;
-							transition: all .5s ease-in-out;
+
+							-webkit-transition:all .25s ease-in-out;
+							-ms-transition: all .25s ease-in-out;
+							transition: all .25s ease-in-out;
+						}
+						#nav > ul > li a {
+							-webkit-transition:all .25s ease-in-out;
+							-ms-transition: all .25s ease-in-out;
+							transition: all .25s ease-in-out;
 						}
 						#nav > ul > li:hover a{
 							color: #6173F4;
-							font-weight: bold;
+							-webkit-transition:all .25s ease-in-out;
+							-ms-transition: all .25s ease-in-out;
+							transition: all .25s ease-in-out;
 						}
 
 						#nav > ul > li.active > a, #nav > ul > li.active > span {
@@ -3176,6 +3183,7 @@ a, a:visited, a:link{
 	overflow: hidden;
 }
 .process {
+	padding: 4em;
 	color: white;
 	text-align: center;
 	position: relative;
@@ -3213,6 +3221,9 @@ body > div.wrapper.style1 > div.process > div > div.col-lg-8.col-md-8.text-cente
 }
 #intro > p:nth-child(2) {
 	margin-bottom: 60px;
+}
+.partner {
+	padding: 4em;
 }
 .partner img {
 	margin: 2em;
