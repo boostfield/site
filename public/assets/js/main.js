@@ -32,13 +32,13 @@
         // $('form').placeholder();
 
         //fixed nav on the top
-        var elm = $('#nav');
-        var startPos = $(elm).offset().top;
-        $.event.add(window, "scroll", function () {
-            var p = $(window).scrollTop();
-            $(elm).css('position', ((p) > startPos) ? 'fixed' : 'absolute');
-            $(elm).css('top', ((p) > startPos) ? '0px' : '');
-        });
+        // var elm = $('#nav');
+        // var startPos = $(elm).offset().top;
+        // $.event.add(window, "scroll", function () {
+        //     var p = $(window).scrollTop();
+        //     $(elm).css('position', ((p) > startPos) ? 'fixed' : 'absolute');
+        //     $(elm).css('top', ((p) > startPos) ? '0px' : '');
+        // });
 
         //gototop
 
