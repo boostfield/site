@@ -36,8 +36,7 @@
 }
 #goToTop a {
 	background: none repeat scroll 0 0 #6777F3;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
+
 	color: #fdfeff;
 	font-size: 18px;
 	padding: 5px;
@@ -2189,9 +2188,7 @@
 		   }
 			#goToTop a {
 				background: none repeat scroll 0 0 #A280F1;
-				border: 1px solid #CCCCCC;
-				border-radius: 8px;
-				-webkit-border-radius: 8px;
+
 				color: #fdfeff;
 				font-size: 18px;
 				padding: 5px;
@@ -2444,10 +2441,9 @@
 	z-index: 20000;
 }
 #goToTop a {
-	background: none repeat scroll 0 0 #A280F1;
-	border: 1px solid #CCCCCC;
-	border-radius: 8px;
-	-webkit-border-radius: 8px;
+	background: none repeat scroll 0 0 #6777F3;
+	border: none;
+	border-radius: 0;
 	color: #fdfeff;
 	font-size: 18px;
 	padding: 5px;
@@ -2956,6 +2952,9 @@
 				margin-top: 10%;
 				height: auto;
 			}
+			#myCarousel {
+				margin-top: 0;
+			}
 	}
 
 .banner {
@@ -3392,6 +3391,7 @@ a, a:visited, a:link{
 	text-decoration: none;
 }
 #myCarousel {
+	margin-top: 0;
 	cursor: pointer; cursor: hand;
 }
 .popover .fade .in{
