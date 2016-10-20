@@ -43,8 +43,9 @@ body {
   color: #6173F4;
   background-size: 18px 3px;
 }
-img.img-title {
-  margin-top: 5em;
+.service {
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 .service .item {
   margin-top: 5em;
@@ -70,6 +71,50 @@ img.img-title {
   color: black;
   letter-spacing: 0;
   line-height: 30px;
+}
+.team {
+  background-color: #FAFAFA;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.team .row.text-center > div {
+  display: inline-block;
+  float: none;
+}
+.team h2 {
+  opacity: 0.5;
+  text-align: center;
+  font-size: 0.8em;
+  color: black;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+.team .member {
+  margin-top: 2.5em;
+}
+.team .member p {
+  text-align: center;
+}
+.team .member p.name {
+  opacity: 0.69;
+  font-size: 1em;
+  color: black;
+  letter-spacing: 0;
+  margin-top: 0.8em;
+  margin-bottom: 4px;
+}
+.team .member p.occupation {
+  opacity: 0.3;
+  font-size: 0.7em;
+  color: black;
+  letter-spacing: 0;
+}
+.case {
+  background-color: #6173F4;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
   .navbar-default {
