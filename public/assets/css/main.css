@@ -2,5 +2,87 @@ html {
   font-size: 20px;
 }
 body {
+  font-family: PingFangSC-Regular;
   font-size: 20px;
+  padding-top: 139px;
+}
+.navbar-default {
+  height: 139px;
+  background-color: white;
+}
+.navbar-default a.navbar-brand {
+  height: 139px;
+  line-height: 139px;
+  margin: 0;
+  padding: 0;
+  color: #6173F4;
+}
+.navbar-default a.navbar-brand img {
+  display: inline-block;
+  margin: 0 1em;
+}
+.navbar-default a.navbar-brand:hover,
+.navbar-default a.navbar-brand:focus {
+  color: #6173F4;
+}
+.navbar-default .navbar-nav li a {
+  color: black;
+  font-size: 0.8em;
+  background-image: url(../images/img_nav_selected_line.png);
+  background-position: center 60%;
+  background-size: 0px 3px;
+  background-repeat: no-repeat;
+  line-height: 139px;
+  padding: 0 15px;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus {
+  color: #6173F4;
+  background-size: 18px 3px;
+}
+img.img-title {
+  margin-top: 5em;
+}
+.service .item {
+  margin-top: 5em;
+}
+.service .item img {
+  width: 94px;
+}
+.service .item img.img-line {
+  height: 3px;
+  width: auto;
+}
+.service .item h1 {
+  opacity: 0.69;
+  font-size: 1.3em;
+  color: black;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  margin-top: 1.7em;
+}
+.service .item p {
+  opacity: 0.5;
+  font-size: 0.8em;
+  color: black;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
+  .navbar-default {
+    height: 50px;
+  }
+  .navbar-default a.navbar-brand {
+    height: 50px;
+    line-height: 50px;
+  }
+  .navbar-default a.navbar-brand img {
+    width: 40px;
+  }
+  .navbar-default .navbar-nav li a {
+    line-height: 50px;
+  }
 }
