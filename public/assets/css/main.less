@@ -9,7 +9,7 @@ html {
   font-size: 20px;
 }
 body {
-  font-family: PingFangSC-Regular, Microsoft YaHei;
+  font-family: PingFangSC-Regular, "Noto Sans CJK SC", "Source Han Sans CN", "Microsoft Yahei";
   font-size: 20px;
   padding-top: 139px;
 }
@@ -20,6 +20,7 @@ body {
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
   outline: none;
 }
+
 //导航栏
 .navbar-default {
   height: 139px;
@@ -60,6 +61,15 @@ body {
     }
   }
 
+}
+
+//大图
+.top-container {
+  height: 529px;
+  background-image: url(../images/img_top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 //业务
@@ -171,7 +181,7 @@ body {
     height: 100%;
   }
 
-  .frame .slidee li.active img {
+  .frame .slidee li.active img{
     box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.20);
   }
 
@@ -180,7 +190,7 @@ body {
     font-size: 1em;
     color: white;
     letter-spacing: 0;
-
+    margin-top: 2em;
   }
   #content {
     text-align: center;
@@ -188,7 +198,7 @@ body {
     font-size: 0.7em;
     color: white;
     letter-spacing: 0;
-
+    margin-top: 0;
   }
   .control-panel {
     img {
@@ -332,9 +342,17 @@ only screen and (max-width: 480px) {
     padding-top: 3em;
     padding-bottom: 3em;
     .member {
+
+    }
+  }
+  //案例
+  .case {
+    .frame .slidee li {
+      width: 100vw;
       img {
-        width: 300;
+        object-fit: cover;
       }
     }
   }
+
 }

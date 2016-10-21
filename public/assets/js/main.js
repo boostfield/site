@@ -9,8 +9,8 @@ jQuery(function($) {
             itemNav: 'forceCentered',
             smart: 1,
             activateOn: 'click',
-            mouseDragging: 1,
-            touchDragging: 1,
+            mouseDragging: 0,
+            touchDragging: 0,
             releaseSwing: 1,
             startAt: 2,
 
@@ -28,16 +28,37 @@ jQuery(function($) {
 
         $('#sly-center').sly('on', 'active', function (eventName, itemIndex ) {
 
-            console.log(itemIndex);  // Sly position object
             switch(itemIndex){
                 case 0:
+                    $("#title").hide().text("智能家居").fadeIn();
+                    $("#content").hide().text("H5开发").fadeIn();
                     break;
                 case 1:
-                    $("#title").text("音乐圣经iOS");
+                    $("#title").hide().text("聚募-专注早期创业项目的众筹融资平台").fadeIn();
+                    $("#content").hide().text("Android APP开发").fadeIn();
+                    break;
+                case 2:
+                    $("#title").hide().text("音乐圣经-做古典音乐的百科全书").fadeIn();
+                    $("#content").hide().text("全平台建设").fadeIn();
+                    break;
+                case 3:
+                    $("#title").hide().text("太棒").fadeIn();
+                    $("#content").hide().text("官方网站建设&APP开发").fadeIn();
+                    break;
+                case 4:
+                    $("#title").hide().text("厦门大学法学院").fadeIn();
+                    $("#content").hide().text("官方网站建设").fadeIn();
+                    break;
+                case 5:
+                    $("#title").hide().text("玩鲜").fadeIn();
+                    $("#content").hide().text("iOS&Android开发").fadeIn();
+                    break;
                 default:
                     break;
             }
         });
+
+
         
         //reload sly when window  resizing
         $(window).resize(function(e) {

@@ -2,7 +2,7 @@ html {
   font-size: 20px;
 }
 body {
-  font-family: PingFangSC-Regular, Microsoft YaHei;
+  font-family: PingFangSC-Regular, "Noto Sans CJK SC", "Source Han Sans CN", "Microsoft Yahei";
   font-size: 20px;
   padding-top: 139px;
 }
@@ -53,6 +53,13 @@ body {
 .navbar-default .navbar-nav li a:focus {
   color: #6173F4;
   background-size: 18px 3px;
+}
+.top-container {
+  height: 529px;
+  background-image: url(../images/img_top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .service {
   padding-top: 5em;
@@ -163,6 +170,7 @@ body {
   font-size: 1em;
   color: white;
   letter-spacing: 0;
+  margin-top: 2em;
 }
 .case #content {
   text-align: center;
@@ -170,6 +178,7 @@ body {
   font-size: 0.7em;
   color: white;
   letter-spacing: 0;
+  margin-top: 0;
 }
 .case .control-panel img {
   width: 57px;
@@ -302,7 +311,10 @@ body {
     padding-top: 3em;
     padding-bottom: 3em;
   }
-  .team .member img {
-    width: 300;
+  .case .frame .slidee li {
+    width: 100vw;
+  }
+  .case .frame .slidee li img {
+    object-fit: cover;
   }
 }
