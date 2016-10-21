@@ -2,7 +2,7 @@ html {
   font-size: 20px;
 }
 body {
-  font-family: PingFangSC-Regular, "Noto Sans CJK SC", "Source Han Sans CN", "Microsoft Yahei";
+  font-family: "Microsoft Yahei";
   font-size: 20px;
   padding-top: 139px;
 }
@@ -55,7 +55,7 @@ body {
   background-size: 18px 3px;
 }
 .top-container {
-  height: 529px;
+  height: 530px;
   background-image: url(../images/img_top.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,15 +162,15 @@ body {
   width: 384px;
   height: 100%;
 }
-.case .frame .slidee li.active img {
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.2);
+.case .frame .slidee li img {
+  cursor: pointer;
 }
 .case #title {
   text-align: center;
   font-size: 1em;
   color: white;
   letter-spacing: 0;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 .case #content {
   text-align: center;
@@ -298,6 +298,9 @@ body {
   }
   body {
     padding-top: 50px;
+  }
+  .top-container {
+    height: 27.60416667vw;
   }
   .service {
     padding-top: 3em;
