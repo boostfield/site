@@ -2,9 +2,20 @@ html {
   font-size: 20px;
 }
 body {
-  font-family: PingFangSC-Regular;
+  font-family: PingFangSC-Regular, Microsoft YaHei;
   font-size: 20px;
   padding-top: 139px;
+}
+#cnzz_stat_icon_1258406185 {
+  display: none;
+}
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none;
 }
 .navbar-default {
   height: 139px;
@@ -49,6 +60,7 @@ body {
 }
 .service .item {
   margin-top: 5em;
+  min-height: 300px;
 }
 .service .item img {
   width: 94px;
@@ -94,6 +106,10 @@ body {
 .team .member {
   margin-top: 2.5em;
 }
+.team .member img {
+  display: inline-block;
+  margin: 0 auto;
+}
 .team .member p {
   text-align: center;
 }
@@ -113,10 +129,146 @@ body {
 }
 .case {
   background-color: #6173F4;
+  box-shadow: 0px 20px 30px 0px rgba(97, 114, 243, 0.1);
+  padding-top: 5em;
+}
+.case .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.case .frame {
+  width: 100%;
+  height: 270px;
+  padding: 0;
+  margin-top: 3.5em;
+}
+.case .frame .slidee {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+}
+.case .frame .slidee li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 384px;
+  height: 100%;
+}
+.case .frame .slidee li.active img {
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.2);
+}
+.case #title {
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  letter-spacing: 0;
+}
+.case #content {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 0.7em;
+  color: white;
+  letter-spacing: 0;
+}
+.case .control-panel img {
+  width: 57px;
+  margin-top: 2.5em;
+  cursor: pointer;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.case .control-panel img:hover,
+.case .control-panel img:focus {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+.case .control-panel img:first-child {
+  margin-right: 1.5em;
+}
+.case .control-panel img:last-child {
+  margin-left: 1.5em;
+}
+.case #btn-all {
+  background: white;
+  border-radius: 1.4em;
+  font-size: 0.8em;
+  color: #6173F4;
+  letter-spacing: 0;
+  width: 204px;
+  height: 42px;
+  margin-top: 2.5em;
+}
+.partner {
+  background-color: white;
   padding-top: 5em;
   padding-bottom: 5em;
+  margin-top: -21px;
+}
+.partner .row.text-center > div {
+  margin-top: 3.5em;
+  display: inline-block;
+  float: none;
+}
+.partner img {
+  cursor: pointer;
+}
+.footer {
+  background-color: #FAFAFA;
+  padding-top: 4em;
+  padding-bottom: 0.7em;
+}
+.footer p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.7em;
+  letter-spacing: 0;
+}
+.footer p.description {
+  line-height: 30px;
+  margin-top: 0.8em;
+}
+.footer a {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.footer a:hover,
+.footer a:focus {
+  color: #6173F4;
+}
+.footer h1 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1em;
+  letter-spacing: 0;
+  line-height: 60px;
+  background-image: url(../images/img_title_line.png);
+  background-size: 39px 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  margin-bottom: 1em;
+}
+.footer p.poweredby {
+  color: rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+  }
+  .navbar-default .navbar-toggle {
+    border: none;
+  }
+  .navbar-collapse.collapse.in,
+  .navbar-collapse.collapsing {
+    background-color: white;
+  }
   .navbar-default {
     height: 50px;
   }
@@ -129,5 +281,28 @@ body {
   }
   .navbar-default .navbar-nav li a {
     line-height: 50px;
+    background-image: none;
+  }
+  .navbar-default .navbar-nav li a:hover,
+  .navbar-default .navbar-nav li a:focus {
+    background-image: none;
+  }
+  body {
+    padding-top: 50px;
+  }
+  .service {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .service .item {
+    margin-top: 2em;
+    text-align: center;
+  }
+  .team {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .team .member img {
+    width: 300;
   }
 }

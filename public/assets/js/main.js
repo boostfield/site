@@ -1,110 +1,50 @@
-/*
- Escape Velocity by HTML5 UP
- html5up.net | @n33co
- Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
- */
-//swiper
-// <<<<<<< HEAD
-// // var mySwiper = new Swiper ('.swiper-container',{
-// //     prevButton:'left carousel-control',
-// //     nextButton:'right carousel-control',
-// // });
-// =======
-// var mySwiper = new Swiper ('.swiper-container',{
-//     prevButton:'left carousel-control',
-//     nextButton:'right carousel-control',
-// });
-// >>>>>>> origin/iss2
-(function ($) {
+jQuery(function($) {
+    (function () {
+        var $frame = $('#sly-center');
+        var $wrap  = $frame.parent();
 
-    $(function () {
-        var $window = $(window),
-            $body = $('body');
+        // Call Sly on frame
+        $frame.sly({
+            horizontal: 1,
+            itemNav: 'forceCentered',
+            smart: 1,
+            activateOn: 'click',
+            mouseDragging: 1,
+            touchDragging: 1,
+            releaseSwing: 1,
+            startAt: 2,
 
-        // Disable animations/transitions until the page has loaded.
-        $body.addClass('is-loading');
+            scrollBy: 0,
+            speed: 300,
+            elasticBounds: 1,
 
-        $window.on('load', function () {
-            $body.removeClass('is-loading');
+            dragHandle: 1,
+            dynamicHandle: 1,
+            clickBar: 1,
+
+            prev: $wrap.find('#prev'),
+            next: $wrap.find('#next'),
         });
 
-        // Fix: Placeholder polyfill.
-        // $('form').placeholder();
+        $('#sly-center').sly('on', 'active', function (eventName, itemIndex ) {
 
-        //fixed nav on the top
-        // var elm = $('#nav');
-        // var startPos = $(elm).offset().top;
-        // $.event.add(window, "scroll", function () {
-        //     var p = $(window).scrollTop();
-        //     $(elm).css('position', ((p) > startPos) ? 'fixed' : 'absolute');
-        //     $(elm).css('top', ((p) > startPos) ? '0px' : '');
-        // });
-
-        //gototop
-
-        //show "gototop" directly,
-
-        // $(document).ready(function () {
-        //     $('#goToTop a').click(function () {
-        //         $('html,body').animate({scrollTop:0},'show');
-        //     });
-        // });
-
-        //show "gototop" indirectly
-        $(document).ready(function () {
-            $("#goToTop").hide()
-            $(function () {
-                $(window).scroll(function () {
-                    if($(this).scrollTop()>1){
-                        $("#goToTop").fadeIn();
-                    }else {
-                        $("#goToTop").fadeOut();
-                    }
-                });
-            });
-            $("#goToTop a").click(function () {
-                $('html,body').animate({scrollTop:0},400);
-                return false;
-            });
-        });
-
-
-
-        // Dropdowns.
-        $('#nav > ul').dropotron({
-            mode: 'fade',
-            noOpenerFade: true,
-            alignment: 'center',
-            detach: false
-        });
-
-        // Off-Canvas Navigation.
-
-        // Initialize WOW.js Scrolling Animations
-        new WOW().init();
-        $('.collapse').on('show.bs.collapse', function (e) {
-            $('.collapse').not(e.target).removeClass('in');
-        });
-
-        $('.smooth').click(function () {
-            $('html, body').animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
-            }, 500);
-            return false;
-        });
-
-        $('.wechat').popover({
-            container: '#contact',
-            html: true,
-            trigger: 'hover',
-            placement: 'auto',
-            delay: {"show": 500, "hide": 100},
-            content: function () {
-                return '<img width="150" height="150" src="' + $(this).data('img') + '" />';
+            console.log(itemIndex);  // Sly position object
+            switch(itemIndex){
+                case 0:
+                    break;
+                case 1:
+                    $("#title").text("音乐圣经iOS");
+                default:
+                    break;
             }
         });
+        
+        //reload sly when window  resizing
+        $(window).resize(function(e) {
+            $frame.sly('reload');
+        });
+    }());
 
-    });
-})(jQuery);
+});
 
 

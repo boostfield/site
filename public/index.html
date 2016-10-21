@@ -16,8 +16,7 @@
 <link rel="stylesheet" href="assets/css/main.css"/>
 <!--[if lte IE 8]>
 <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
-<!-- Plugin CSS -->
-<link href="assets/css/animate.min.css" rel="stylesheet">
+
 <header>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -39,8 +38,8 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a class="" href="#service">业务</a></li>
-                    <li><a class="" href="#us">团队</a></li>
-                    <li><a class="" href="http://blog.boostfield.com/tag/an-li/">案例</a></li>
+                    <li><a class="" href="#team">团队</a></li>
+                    <li><a class="" href="#case">案例</a></li>
                     <li><a href="http://blog.boostfield.com">博客</a></li>
                     <li><a class="" href="#contact">加入我们</a></li>
 
@@ -98,7 +97,7 @@
             </div>
         </div>
     </div>
-    <div class="team">
+    <div class="team" id="team">
         <div class="container">
             <img src="assets/images/img_title_team.png" width="200" class="img img-responsive img-title center-block"/>
             <h2>在田信息凝聚了一批热爱技术、充满活力和进取精神的行业精英。主要创始人曾是华为、联想、网宿等知名企业的业务骨干，
@@ -128,7 +127,7 @@
                 <div class="member col-lg-2 col-md-3 col-sm-6 col-xs-12">
                     <img src="assets/images/吴立军.jpg" class="img img-responsive" width="218">
                     <p class="name">邓小丹</p>
-                    <p class="occupation">CEO&产品经理</p>
+                    <p class="occupation">设计师</p>
                 </div>
 
                 <div class="member col-lg-2 col-md-3 col-sm-6 col-xs-12">
@@ -160,17 +159,92 @@
 
     </div>
     <div class="case">
-        <div class="container">
+        <div class="container-fluid text-center">
             <img src="assets/images/img_title_case.png" width="200" class="img img-responsive img-title center-block"/>
+            <div class="frame" id="sly-center">
+                <ul class="slidee">
+                    <li><img src="assets/images/img_office_1.jpg" width="384"/></li>
+                    <li><img src="assets/images/img_office_2.jpg" width="384"/></li>
+                    <li><img src="assets/images/img_office_3.jpg" width="384"/></li>
+                    <li><img src="assets/images/img_office_4.jpg" width="384"/></li>
+                    <li><img src="assets/images/img_office_5.jpg" width="384"/></li>
+                    <li><img src="assets/images/img_office_6.jpg" width="384"/></li>
+
+                </ul>
+            </div>
+            <p id="title">音乐圣经</p>
+            <p id="content">做古典音乐的百科全书</p>
+            <div class="control-panel text-center">
+                <img src="assets/images/img_case_left.png" id="prev"/>
+                <img src="assets/images/img_case_right.png" id="next"/>
+            </div>
+            <button class="btn btn-default" id="btn-all" onclick="location.href='http://blog.boostfield.com/tag/an-li/'">查看全部</button>
         </div>
     </div>
-<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cspan id='cnzz_stat_icon_1258406185'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1258406185%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
-</script>
+    <div class="partner">
+        <div class="container">
+            <img src="assets/images/img_title_partner.png" width="160" class="img img-responsive img-title center-block"/>
+            <div class="row text-center">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <img src="assets/images/img_partner_1024.png" class="img img-responsive" onclick="window.open('http://www.dream1024.com/', '_blank')"/>
+                </div>
 
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <img src="assets/images/img_partner_tapon.png" class="img img-responsive" onclick="window.open('http://tapon.com.cn/', '_blank')"/>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <img src="assets/images/img_partner_law.png" class="img img-responsive" onclick="window.open('http://law.xmu.edu.cn/home', '_blank')"/>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <img src="assets/images/img_partner_yunzhong.png" class="img img-responsive" onclick="window.open('http://www.cloudz-data.com/', '_blank')"/>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <img src="assets/images/img_partner_xiniu.png" class="img img-responsive"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <img src="assets/images/img_bottom_logo.png" width="47" class="img img-responsive"/>
+                    <p class="description">在田信息凝聚了一批热爱技术、充满活力和进取精神的行业精英，在这等待你的加入。</p>
+                </div>
+                <div class="col-md-offset-1 col-md-2 col-sm-2 col-xs-12">
+                    <h1>链接</h1>
+                    <p><a href="http://blog.boostfield.com/tag/an-li/">案例</a></p>
+                    <p><a href="http://blog.boostfield.com/tag/he-xin-jie-zhi-guan/">核心价值</a></p>
+                    <p><a href="http://blog.boostfield.com/tag/ji-shu/">技术分享</a></p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <h1>联系我们</h1>
+                    <p><a>厦门市湖里区枋湖西路189号四海智慧园307</a></p>
+                    <p><a href="tel:15960807349">15960807349</a></p>
+                    <p><a href="mailto:business@boostfield.com">business@boostfield.com</a></p>
+                </div>
+                <div class="col-md-offset-1 col-md-2 col-sm-3 col-xs-12 ">
+                    <h1>微信联系</h1>
+                    <img src="assets/images/qr_code.jpeg" width="86"/>
+                </div>
+            </div>
+            <hr />
+            <p class="poweredby text-center">
+                ©2016 boostfield版权所有 闽ICP备14005334号-2
+            </p>
+
+        </div>
+    </div>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-
+<script src="assets/js/sly.min.js"></script>
+<script src="assets/js/main.js"></script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1258406185'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1258406185%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
 </body>
 </html> 
 
