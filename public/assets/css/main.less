@@ -11,7 +11,7 @@ html {
 body {
   font-family: "Microsoft Yahei";
   font-size: 20px;
-  padding-top: 139px;
+  padding-top: 90px;
 }
 //隐藏cnzz
 #cnzz_stat_icon_1258406185 {
@@ -23,11 +23,11 @@ body {
 
 //导航栏
 .navbar-default {
-  height: 139px;
+  height: 90px;
   background-color: white;
   a.navbar-brand {
-    height: 139px;
-    line-height: 139px;
+    height: 90px;
+    line-height: 90px;
     margin: 0;
     padding: 0;
     color: @primary-color;
@@ -46,10 +46,10 @@ body {
         color: @text-color;
         font-size: 0.8em;
         background-image: url(../images/img_nav_selected_line.png);
-        background-position: center 60%;
+        background-position: center 70%;
         background-size: 0px 3px;
         background-repeat: no-repeat;
-        line-height: 139px;
+        line-height: 90px;
         padding: 0 15px;
         .transition-all;
       }
@@ -156,7 +156,9 @@ body {
   background-color: @primary-color;
   box-shadow: 0px 20px 30px 0px rgba(97,114,243,0.10);
   padding-top: 5em;
-
+  padding-bottom: 4em;
+  z-index: 999;
+  position: relative;
   .container-fluid {
     padding-left: 0;
     padding-right: 0;
@@ -230,11 +232,19 @@ body {
     width: 204px;
     height: 42px;
     margin-top: 2.5em;
+    border: 1px ;
+    position: absolute;
+    bottom: -21px;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);;
   }
 }
 
 //合作伙伴
 .partner {
+
   background-color: white;
   padding-top: 5em;
   padding-bottom: 5em;
@@ -275,7 +285,7 @@ body {
     color: @primary-color
   }
   h1 {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.7);
     font-size: 1em;
     letter-spacing: 0;
     line-height: 60px;
