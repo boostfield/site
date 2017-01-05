@@ -56,7 +56,7 @@ jQuery(function($) {
                 case 4:
 
                     $("#title").hide().text("太棒").fadeIn();
-                    $("#content").hide().text("官方网站建设&APP开发").fadeIn();
+                    $("#content").hide().text("官方网站建设").fadeIn();
                     $wrap.find('#prev').show();
                     $wrap.find('#next').show();
                     break;

@@ -37,7 +37,7 @@ body {
   color: #6173F4;
 }
 .navbar-default .navbar-nav li a {
-  color: black;
+  color: rgba(0, 0, 0, 0.7);
   font-size: 0.8em;
   background-image: url(../images/img_nav_selected_line.png);
   background-position: center 70%;
@@ -67,7 +67,9 @@ body {
 }
 .service .item {
   margin-top: 5em;
+  height: 300px;
   min-height: 300px;
+  padding: 0 20px;
 }
 .service .item img {
   width: 94px;
@@ -104,6 +106,7 @@ body {
   opacity: 0.5;
   text-align: center;
   font-size: 0.8em;
+  font-weight: 200;
   color: black;
   letter-spacing: 0;
   line-height: 30px;
@@ -173,14 +176,17 @@ body {
 .case #title {
   text-align: center;
   font-size: 1em;
+  font-weight: 200;
   color: white;
   letter-spacing: 0;
   margin-top: 1em;
+  margin-bottom: 4px;
 }
 .case #content {
   text-align: center;
   opacity: 0.5;
   font-size: 0.7em;
+  font-weight: 200;
   color: white;
   letter-spacing: 0;
   margin-top: 0;
@@ -225,7 +231,7 @@ body {
 }
 .partner {
   background-color: white;
-  padding-top: 5em;
+  padding-top: 6em;
   padding-bottom: 5em;
   margin-top: -21px;
 }
