@@ -247,6 +247,10 @@ body {
 .aboutus .img-about-us {
   margin-top: 76px;
 }
+.aboutus .img-about-join {
+  margin-top: 76px;
+  margin-bottom: 76px;
+}
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
   .navbar-default .navbar-toggle:focus,
   .navbar-default .navbar-toggle:hover {
@@ -329,6 +333,10 @@ body {
     margin-top: 60px;
   }
   .aboutus .img-about-us {
-    margin-top: 30px;
+    margin-top: 40px;
+  }
+  .aboutus .img-about-join {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
