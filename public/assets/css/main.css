@@ -68,9 +68,11 @@ body {
   margin-bottom: 180px;
 }
 .solution h1 {
+  font-weight: 200;
   font-size: 40px;
 }
 .solution p {
+  font-weight: 200;
   opacity: 0.5;
   font-size: 16px;
   color: #000000;
@@ -213,6 +215,7 @@ body {
   color: #6173F4;
 }
 .footer h1 {
+  margin-top: 0;
   color: rgba(0, 0, 0, 0.7);
   font-size: 1em;
   letter-spacing: 0;
@@ -227,6 +230,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 .aboutus h2 {
+  font-weight: 200;
   text-align: center;
   opacity: 0.5;
   font-size: 16px;
@@ -316,12 +320,6 @@ body {
   }
   .aboutus h2 {
     text-align: center;
-    opacity: 0.5;
-    font-size: 16px;
-    color: #000000;
-    letter-spacing: 0;
-    line-height: 30px;
-    margin-top: 27px;
   }
   .aboutus .img-about-boostfield {
     margin-top: 40px;
