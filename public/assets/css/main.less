@@ -65,96 +65,32 @@ body {
 
 //大图
 .top-container {
-  height: 530px;
-  background-image: url(../images/img_top.jpg);
+  height: 800px;
+  background-image: url(../images/img_home_top.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
-//业务
-.service {
-  padding-top: 5em;
-  padding-bottom: 5em;
-  .item {
-    margin-top: 5em;
-    height: 300px;
-    min-height: 300px;
-    padding: 0 20px;
-    img {
-      width: 94px;
-    }
-    img.img-line {
-      height: 3px;
-      width: auto;
-    }
-    h1 {
-      opacity: 0.69;
-      font-size: 1.3em;
-      color: @text-color;
-      letter-spacing: 0;
-      margin-bottom: 0;
-      margin-top: 1.7em;
-    }
-
-    p {
-      opacity: 0.5;
-      font-size: 0.8em;
-      color: @text-color;
-      letter-spacing: 0;
-      line-height: 30px;
-      
-    }
-  }
+.home-img-solution {
+  margin: 100px auto 200px auto;
 }
 
-//团队
-.team {
-  background-color: #FAFAFA;
-  padding-top: 5em;
-  padding-bottom: 5em;
-  .row.text-center > div {
-    display: inline-block;
-    float: none;
+.solution {
+  margin-bottom: 180px;
+  h1 {
+    font-size: 40px;
   }
-  h2 {
+  p {
     opacity: 0.5;
-    text-align: center;
-    font-size: 0.8em;
-    font-weight: 200;
-    color: @text-color;
+    font-size: 16px;
+    color: #000000;
     letter-spacing: 0;
     line-height: 30px;
-    margin-top: 3em;
-    margin-bottom: 1em;
-  }
-  .member {
-    margin-top: 2.5em;
-    padding: 0;
-    img {
-      display: inline-block;
-      margin: 0 auto;
-      width: 100%;
-    }
-    p {
-      text-align: center;
-    }
-    p.name {
-      opacity: 0.69;
-      font-size: 1em;
-      color: @text-color;
-      letter-spacing: 0;
-      margin-top: 0.8em;
-      margin-bottom: 4px;
-    }
-    p.occupation {
-      opacity: 0.3;
-      font-size: 0.7em;
-      color: @text-color;
-      letter-spacing: 0;
-    }
+    margin-top: 10px;
   }
 }
+
+
 
 //案例
 .case {
@@ -311,6 +247,31 @@ body {
   }
 }
 
+//关于我们
+.aboutus {
+  h2 {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-top: 27px;
+  }
+  .img-about-boostfield {
+    margin-top: 99px;
+  }
+  .img-about-team {
+    margin-top: 130px;
+  }
+  .img-about-office {
+    margin-top: 143px;
+  }
+  .img-about-us {
+    margin-top: 76px;
+  }
+}
+
 //移动端适配
 @media only screen
 and (max-device-width: 640px),
@@ -352,23 +313,29 @@ only screen and (max-width: 480px) {
   }
   //大图
   .top-container {
-    height: 53000/1920vw;
+    height: 80000/1920vw;
   }
-  //业务
-  .service {
-    padding-top: 3em;
-    padding-bottom: 3em;
-    .item {
-      margin-top: 2em;
+
+
+  .home-img-solution {
+    margin: 40px auto 40px auto;
+  }
+  .solution {
+    margin-bottom: 40px;
+    .img-line {
+      visibility: hidden;
+    }
+    h1 {
+      font-size: 30px;
       text-align: center;
     }
-  }
- //团队
-  .team {
-    padding-top: 3em;
-    padding-bottom: 3em;
-    .member {
-
+    p {
+      opacity: 0.5;
+      font-size: 16px;
+      color: #000000;
+      letter-spacing: 0;
+      line-height: 30px;
+      margin-top: 10px;
     }
   }
   //案例
@@ -378,6 +345,31 @@ only screen and (max-width: 480px) {
       img {
         object-fit: cover;
       }
+    }
+  }
+
+  //关于我们
+  .aboutus {
+    h2 {
+      text-align: center;
+      opacity: 0.5;
+      font-size: 16px;
+      color: #000000;
+      letter-spacing: 0;
+      line-height: 30px;
+      margin-top: 27px;
+    }
+    .img-about-boostfield {
+      margin-top: 40px;
+    }
+    .img-about-team {
+      margin-top: 60px;
+    }
+    .img-about-office {
+      margin-top: 60px;
+    }
+    .img-about-us {
+      margin-top: 30px;
     }
   }
 

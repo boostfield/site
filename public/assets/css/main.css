@@ -55,89 +55,28 @@ body {
   background-size: 18px 3px;
 }
 .top-container {
-  height: 530px;
-  background-image: url(../images/img_top.jpg);
+  height: 800px;
+  background-image: url(../images/img_home_top.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.service {
-  padding-top: 5em;
-  padding-bottom: 5em;
+.home-img-solution {
+  margin: 100px auto 200px auto;
 }
-.service .item {
-  margin-top: 5em;
-  height: 300px;
-  min-height: 300px;
-  padding: 0 20px;
+.solution {
+  margin-bottom: 180px;
 }
-.service .item img {
-  width: 94px;
+.solution h1 {
+  font-size: 40px;
 }
-.service .item img.img-line {
-  height: 3px;
-  width: auto;
-}
-.service .item h1 {
-  opacity: 0.69;
-  font-size: 1.3em;
-  color: black;
-  letter-spacing: 0;
-  margin-bottom: 0;
-  margin-top: 1.7em;
-}
-.service .item p {
+.solution p {
   opacity: 0.5;
-  font-size: 0.8em;
-  color: black;
+  font-size: 16px;
+  color: #000000;
   letter-spacing: 0;
   line-height: 30px;
-}
-.team {
-  background-color: #FAFAFA;
-  padding-top: 5em;
-  padding-bottom: 5em;
-}
-.team .row.text-center > div {
-  display: inline-block;
-  float: none;
-}
-.team h2 {
-  opacity: 0.5;
-  text-align: center;
-  font-size: 0.8em;
-  font-weight: 200;
-  color: black;
-  letter-spacing: 0;
-  line-height: 30px;
-  margin-top: 3em;
-  margin-bottom: 1em;
-}
-.team .member {
-  margin-top: 2.5em;
-  padding: 0;
-}
-.team .member img {
-  display: inline-block;
-  margin: 0 auto;
-  width: 100%;
-}
-.team .member p {
-  text-align: center;
-}
-.team .member p.name {
-  opacity: 0.69;
-  font-size: 1em;
-  color: black;
-  letter-spacing: 0;
-  margin-top: 0.8em;
-  margin-bottom: 4px;
-}
-.team .member p.occupation {
-  opacity: 0.3;
-  font-size: 0.7em;
-  color: black;
-  letter-spacing: 0;
+  margin-top: 10px;
 }
 .case {
   background-color: #6173F4;
@@ -287,6 +226,27 @@ body {
 .footer p.poweredby {
   color: rgba(0, 0, 0, 0.3);
 }
+.aboutus h2 {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: 27px;
+}
+.aboutus .img-about-boostfield {
+  margin-top: 99px;
+}
+.aboutus .img-about-team {
+  margin-top: 130px;
+}
+.aboutus .img-about-office {
+  margin-top: 143px;
+}
+.aboutus .img-about-us {
+  margin-top: 76px;
+}
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
   .navbar-default .navbar-toggle:focus,
   .navbar-default .navbar-toggle:hover {
@@ -321,24 +281,54 @@ body {
     padding-top: 50px;
   }
   .top-container {
-    height: 27.60416667vw;
+    height: 41.66666667vw;
   }
-  .service {
-    padding-top: 3em;
-    padding-bottom: 3em;
+  .home-img-solution {
+    margin: 40px auto 40px auto;
   }
-  .service .item {
-    margin-top: 2em;
+  .solution {
+    margin-bottom: 40px;
+  }
+  .solution .img-line {
+    visibility: hidden;
+  }
+  .solution h1 {
+    font-size: 30px;
     text-align: center;
   }
-  .team {
-    padding-top: 3em;
-    padding-bottom: 3em;
+  .solution p {
+    opacity: 0.5;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-top: 10px;
   }
   .case .frame .slidee li {
     width: 100vw;
   }
   .case .frame .slidee li img {
     object-fit: cover;
+  }
+  .aboutus h2 {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-top: 27px;
+  }
+  .aboutus .img-about-boostfield {
+    margin-top: 40px;
+  }
+  .aboutus .img-about-team {
+    margin-top: 60px;
+  }
+  .aboutus .img-about-office {
+    margin-top: 60px;
+  }
+  .aboutus .img-about-us {
+    margin-top: 30px;
   }
 }
